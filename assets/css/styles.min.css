@@ -13,11 +13,6 @@ body{background-color: #aee7fd;transition: ease-in-out;}.set-height{align-items:
   .nav-link:hover {
       transform: scale(1.2);
   }
-  @media (max-height: 493px) {
-      #introtext{
-          font-size: small;
-      }
-  }
   #down:hover {
       cursor: pointer;
       transform: scale(1.1);
