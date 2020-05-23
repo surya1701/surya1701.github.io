@@ -1,0 +1,16 @@
+img {
+    margin-right: 10%;
+    width: 5vw;
+}
+video {
+    margin-right: 10%;
+    width: 5vw;
+}
+.col-md {
+    padding: 2%;
+    border: 1px solid bisque;
+    background-color: aliceblue;
+}
+#null {
+    background-color: bisque;
+}
