@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LENR ChatBot</title>
+    <style>
+        .btn:hover i {
+            transform: scale(1.1);
+        }
+
+        .table-wrap {
+            height: 80vh;
+            overflow-x: scroll;
+        }
+
+        .table {
+            min-width: 1000px !important;
+            width: 100%;
+            -webkit-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+            -moz-box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+            box-shadow: 0px 5px 12px -12px rgba(0, 0, 0, 0.29);
+        }
+
+        .table thead th {
+            border: none;
+            padding: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            color: gray;
+        }
+
+        .table tfoot tr {
+            background: #fff;
+            border-bottom: 4px solid #eceffa;
+        }
+
+        .table tfoot th {
+            border: none;
+            padding: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            color: gray;
+        }
+
+        .table thead tr {
+            background: #fff;
+            border-bottom: 4px solid #eceffa;
+        }
+
+        .table tbody tr {
+            margin-bottom: 10px;
+            border-bottom: 4px solid #f8f9fd;
+        }
+
+        .table tbody tr:last-child {
+            border-bottom: 0;
+        }
+
+        .table tbody th,
+        .table tbody td {
+            border: none;
+            padding: 30px;
+            font-size: 14px;
+            background: #fff;
+            vertical-align: middle;
+        }
+
+        .table tbody td.status span {
+            position: relative;
+            border-radius: 30px;
+            padding: 4px 10px 4px 25px;
+        }
+
+        .table tbody td.status span:after {
+            position: absolute;
+            top: 9px;
+            left: 10px;
+            width: 10px;
+            height: 10px;
+            content: '';
+            border-radius: 50%;
+        }
+
+        .table tbody td.status .active {
+            background: #cff6dd;
+            color: #1fa750;
+        }
+
+        .table tbody td.status .active:after {
+            background: #23bd5a;
+        }
+
+        .table tbody td.status .waiting {
+            background: #fdf5dd;
+            color: #cfa00c;
+        }
+
+        .table tbody td.status .waiting:after {
+            background: #f2be1d;
+        }
+
+        .table tbody td .img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .table tbody td .email span {
+            display: block;
+        }
+
+        .table tbody td .email span:last-child {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        .table tbody td .close span {
+            font-size: 12px;
+            color: #dc3545;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="py-5">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" style="background:rgba(87,6,140);">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">LENR ChatBot</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 float-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chatbot.html">ChatBot</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="data.html">LENR research database</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-fluid mt-5" id="data">
+        <div class="row g-0 text-center">
+            <div class="col-12 bg-light p-2">
+                <h3 class="display-4">LENR Research Database</h3>
+                <hr />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et convallis odio. Pellentesque
+                    tincidunt tellus sit amet justo viverra condimentum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Integer et convallis odio.
+                    Pellentesque
+                    tincidunt tellus sit amet justo viverra condimentum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Integer et convallis odio. Pellentesque
+                    tincidunt tellus sit amet justo viverra condimentum.
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-wrap">
+                    <table class="table table-responsive-xl">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Authors</th>
+                                <th>Status</th>
+                                <th>Abstract</th>
+                            </tr>
+                        </thead>
+                        <tbody id="insertTable">
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Title</th>
+                                <th>Authors</th>
+                                <th>Status</th>
+                                <th>Abstract</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/9e84f1a490.js" crossorigin="anonymous"></script>
+
+    <script>
+        // Create a function to display the table
+        function displayTable() {
+            // Create a table element
+            const table = document.getElementById('insertTable');
+
+            const jsonData = {
+                "data": [
+                    {
+                        "title": "1ABCDEFGH 12345",
+                        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+                        "data": "01/01/2000",
+                        "status": "Added",
+                        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    {
+                        "title": "2ABCDEFGH 12345",
+                        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+                        "data": "01/01/2000",
+                        "status": "Added",
+                        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    {
+                        "title": "3ABCDEFGH 12345",
+                        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+                        "data": "01/01/2000",
+                        "status": "Cleaning in process",
+                        "added": false, "abstract": ""
+                    },
+                    {
+                        "title": "4ABCDEFGH 12345",
+                        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+                        "data": "01/01/2000",
+                        "status": "Added",
+                        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    {
+                        "title": "5ABCDEFGH 12345",
+                        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+                        "data": "01/01/2000",
+                        "status": "Format Mismatchs",
+                        "added": false, "abstract": ""
+                    },
+                    {
+                        "title": "6ABCDEFGH 12345",
+                        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+                        "data": "01/01/2000",
+                        "status": "Added",
+                        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    {
+                        "title": "ABCDEFGH 12345",
+                        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+                        "data": "01/01/2000",
+                        "status": "Added",
+                        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+
+                    {
+                        "title": "ABCDEFGH 12345",
+                        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+                        "data": "01/01/2000",
+                        "status": "Added",
+                        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    {
+                        "title": "ABCDEFGH 12345",
+                        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+                        "data": "01/01/2000",
+                        "status": "Added",
+                        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    {
+                        "title": "ABCDEFGH 12345",
+                        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+                        "data": "01/01/2000",
+                        "status": "Added",
+                        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    {
+                        "title": "ABCDEFGH 12345",
+                        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+                        "data": "01/01/2000",
+                        "status": "Added",
+                        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    }
+
+                ]
+            }
+
+            const values = jsonData["data"];
+
+            var c = 0;
+            values.forEach(v => {
+                if (v["added"]) {
+                    table.innerHTML += "<tr class='alert' role='alert'>\n" +
+                        "<td class='d-flex align-items-center'>\n" +
+                        "<div class='pl-3 email'>" +
+                        "\n" + v["title"] + "</span>" +
+                        "<span>Added: " + v["date"] + "</span>" +
+                        "</div>" +
+                        "</td >" +
+                        "<td>" + v["Authors"] + "</td>" +
+                        "<td class='status'><span class='active'>" + v["status"] + "</span>" +
+                        "</td>" + "<td><button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#exampleModal" + c.toString() + "'>View</button></td>";
+                    table.innerHTML +=
+                        "<div class='modal fade' id='exampleModal" + c.toString() + "' tabindex = '-1' aria-labelledby='exampleModalLabel' aria-hidden='true' >\
+                    <div class='modal-dialog'>\
+                        <div class='modal-content'>\
+                            <div class='modal-header'>\
+                                <h5 class='modal-title' id='exampleModalLabel'>" + v["title"] + "</h5>\
+                                <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>\
+                            </div>\
+                            <div class='modal-body'>" + v["abstract"] + "</div>\
+                            <div class='modal-footer'>\
+                                <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button >\
+                            </div >\
+                        </div >\
+                    </div >\
+                </div >";
+                    c += 1;
+                }
+                else
+                    table.innerHTML += "<tr class='alert' role='alert'>\n" +
+                        "<td class='d-flex align-items-center'>\n" +
+                        "<div class='pl-3 email'>" +
+                        "\n" + v["title"] + "</span>" +
+                        "<span>Added: " + v["date"] + "</span>" +
+                        "</div>" +
+                        "</td >" +
+                        "<td>" + v["Authors"] + "</td>" +
+                        "<td class='status'><span class='waiting'>" + v["status"] + "</span>" +
+                        "</td>" + "<td><button disabled type='button' class='btn btn-primary disabled' data-bs-toggle='modal' data-bs-target='#exampleModal" + c.toString() + "'>View</button></td>";
+                table.innerHTML += "</tr>\n";
+            });
+        }
+
+        displayTable();
+    </script>
+
+</body>
+
+</html>

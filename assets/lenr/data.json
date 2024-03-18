@@ -1,0 +1,83 @@
+{
+ "data":[
+    {
+        "title":"ABCDEFGH 12345",
+        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+        "data": "01/01/2000",
+        "status": "Added",
+        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "title":"ABCDEFGH 12345",
+        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+        "data": "01/01/2000",
+        "status": "Added",
+        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "title":"ABCDEFGH 12345",
+        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+        "data": "01/01/2000",
+        "status": "Cleaning in process",
+        "added": false, "abstract": ""
+    },
+    {
+        "title":"ABCDEFGH 12345",
+        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+        "data": "01/01/2000",
+        "status": "Added",
+        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "title":"ABCDEFGH 12345",
+        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+        "data": "01/01/2000",
+        "status": "Format Mismatchs",
+        "added": false, "abstract": ""
+    },
+    {
+        "title":"ABCDEFGH 12345",
+        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+        "data": "01/01/2000",
+        "status": "Added",
+        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "title":"ABCDEFGH 12345",
+        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+        "data": "01/01/2000",
+        "status": "Added",
+        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+
+    {
+        "title":"ABCDEFGH 12345",
+        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+        "data": "01/01/2000",
+        "status": "Added",
+        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "title":"ABCDEFGH 12345",
+        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+        "data": "01/01/2000",
+        "status": "Added",
+        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "title":"ABCDEFGH 12345",
+        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+        "data": "01/01/2000",
+        "status": "Added",
+        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "title":"ABCDEFGH 12345",
+        "Authors": "Dr. Abcd Efgh, Dr. Abcd Efgh, Dr. Abcd Efgh",
+        "data": "01/01/2000",
+        "status": "Added",
+        "added": true, "abstract": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+    
+ ]
+}
