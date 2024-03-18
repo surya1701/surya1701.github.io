@@ -3,7 +3,15 @@
 
 <head>
     <title>LENR ChatBot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <style>
+        .font-change {
+            font-family: "Open Sans", sans-serif;
+        }
+
         .infocard {
             transition: all 0.2s ease-in-out;
         }
@@ -80,6 +88,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="data.html">LENR research database</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://lenrdashboard.com/">LENR Dashboard</a>
+                        </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -107,14 +118,16 @@
             <div class="col-12 bg-light p-2">
                 <h3 class="display-4">About</h3>
                 <hr />
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et convallis odio. Pellentesque
-                    tincidunt tellus sit amet justo viverra condimentum. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Integer et convallis odio.
-                    Pellentesque
-                    tincidunt tellus sit amet justo viverra condimentum. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Integer et convallis odio. Pellentesque
-                    tincidunt tellus sit amet justo viverra condimentum.
+                <p class="font-change">
+                    Despite more than three decades of research, Low
+                    Energy Nuclear Reactions (LENR) still pose a challenge to
+                    comprehensive understanding. The vast array of papers, articles, presentations, reports etc. are
+                    vital but often difficult to collate. Thousands of literature pieces have been published over the
+                    years, and considering the significance of work towards LENR, it is crucial that the data is readily
+                    available and accessible across the globe. As a supplement to some of our prior efforts, with this
+                    project we introduce a chatbot that leverages our compilitation of LENR data repository to answer
+                    questions and other queries - using the LLMs ability the generate data given relevant context. More
+                    about our contributions below.
                 </p>
 
             </div>
@@ -129,21 +142,21 @@
                             <button class="nav-link mb-3 p-3 shadow active" id="v-pills-p1-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-p1" role="tab" aria-controls="v-pills-p1" aria-selected="true">
                                 <!-- <i class="fa fa-user-circle-o mr-2"></i> -->
-                                <span class="font-weight-bold small">Process 1</span>
+                                <span class="font-weight-bold small">Process 1 (LENR)</span>
                             </button>
 
                             <button class="nav-link mb-3 p-3 shadow" id="v-pills-p2-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-p2" role="tab" aria-controls="v-pills-p2"
                                 aria-selected="false">
                                 <!-- <i class="fa fa-user-circle-o mr-2"></i> -->
-                                <span class="font-weight-bold small">Process 2</span>
+                                <span class="font-weight-bold small">Process 2 (Data)</span>
                             </button>
 
                             <button class="nav-link mb-3 p-3 shadow" id="v-pills-p3-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-p3" role="tab" aria-controls="v-pills-p3"
                                 aria-selected="false">
                                 <!-- <i class="fa fa-user-circle-o mr-2"></i> -->
-                                <span class="font-weight-bold small">Process 3</span>
+                                <span class="font-weight-bold small">Process 3 (LLM)</span>
                             </button>
                         </div>
                     </div>
@@ -194,7 +207,7 @@
             </div>
         </section>
 
-        <div class="container-fluid bg-light" id="statistics">
+        <div class="container-fluid bg-light font-change" id="statistics">
             <div class="row d-flex">
                 <div class="col-lg-3 col-6">
                     <div class="card infocard mb-3">
@@ -277,7 +290,7 @@
                     <h5 class="display-5">In Collaboration With</h5>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-4 p-5 mt-3">
                     <img class="img-fluid rounded" src="cas_logo.jpg">
                 </div>
@@ -286,6 +299,9 @@
                 </div>
                 <div class="col-4 p-5">
                     <img class="img-fluid rounded" src="nyucourant_logo.png">
+                </div>
+                <div class="col-4 p-5">
+                    <img class="img-fluid rounded" src="logo.png">
                 </div>
             </div>
         </div>
